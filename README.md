@@ -1,63 +1,7 @@
-# libbpf-bootstrap: demo BPF applications
+# libbpf-bootstrap: 利用该框架开发ssh的监控模块，用于边缘计算平台的安全监控，记录ssh的登录以及操作，上传日志到ELK系统，用于检索和分析
 
 [![Github Actions](https://github.com/libbpf/libbpf-bootstrap/actions/workflows/build.yml/badge.svg)](https://github.com/libbpf/libbpf-bootstrap/actions/workflows/build.yml)
 [![Github Actions](https://github.com/libbpf/libbpf-bootstrap/actions/workflows/build-android.yml/badge.svg)](https://github.com/libbpf/libbpf-bootstrap/actions/workflows/build-android.yml)
-
-## minimal
-
-`minimal` is just that – a minimal practical BPF application example. It
-doesn't use or require BPF CO-RE, so should run on quite old kernels. It
-installs a tracepoint handler which is triggered once every second. It uses
-`bpf_printk()` BPF helper to communicate with the world. To see it's output,
-read `/sys/kernel/debug/tracing/trace_pipe` file as a root:
-
-```shell
-$ cd examples/c
-$ make minimal
-$ sudo ./minimal
-$ sudo cat /sys/kernel/debug/tracing/trace_pipe
-           <...>-3840345 [010] d... 3220701.101143: bpf_trace_printk: BPF triggered from PID 3840345.
-           <...>-3840345 [010] d... 3220702.101265: bpf_trace_printk: BPF triggered from PID 3840345.
-```
-
-`minimal` is great as a bare-bones experimental playground to quickly try out
-new ideas or BPF features.
-
-## minimal_ns
-
-`minimal_ns` is as same as `minimal` but for namespaced environments.
-`minimal` would not work in environments that have namespace, like containers,
-or WSL2, because the perceived pid of the process in the namespace is not the
-actual pid of the process. For executing `minimal` in namespaced environments
-you need to use `minimal_ns` instead.
-
-```shell
-$ cd examples/c
-$ make minimal_ns
-$ sudo ./minimal_ns
-$ sudo cat /sys/kernel/debug/tracing/trace_pipe
-           <...>-3840345 [022] d...1  8804.331204: bpf_trace_printk: BPF triggered from PID 9087.
-           <...>-3840345 [022] d...1  8804.331215: bpf_trace_printk: BPF triggered from PID 9087.
-```
-
-## minimal_Legacy
-
-This version of `minimal` is modified to allow running on even older kernels
-that do not allow global variables. bpf_printk uses global variables unless
-BPF_NO_GLOBAL_DATA is defined before including bpf_helpers.h. Additionally,
-the global variable my_pid has been replaced with an array of one element to
-hold the process pid.
-
-```
-$ cd examples/c
-$ make minimal_legacy
-$ sudo ./minimal_legacy
-$ sudo cat /sys/kernel/debug/tracing/trace_pipe
-  minimal_legacy-52030 [001] .... 491227.784078: 0x00000001: BPF triggered from PID 52030.
-  minimal_legacy-52030 [001] .... 491228.840571: 0x00000001: BPF triggered from PID 52030.
-  minimal_legacy-52030 [001] .... 491229.841643: 0x00000001: BPF triggered from PID 52030.
-  minimal_legacy-52030 [001] .... 491230.842432: 0x00000001: BPF triggered from PID 52030.
-```
 
 ## bootstrap
 
