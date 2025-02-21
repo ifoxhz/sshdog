@@ -33,7 +33,7 @@ int main(int argc, char **argv)
         return 1;
     }
 
-    // 将 eBPF 程序附加到 LSM 钩子
+    // 将 eBPF 程序附加到 LSM 钩子,error
     ret = bpf_prog_attach(prog_fd, 0, BPF_LSM_MAC, 0);
     if (ret) {
         fprintf(stderr, "Failed to attach eBPF program: %s\n", strerror(-ret));
