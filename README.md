@@ -133,45 +133,6 @@ $ sudo ./bootstrap
 <...>
 ```
 
-XMake build (Linux):
-
-```shell
-$ git submodule update --init --recursive       # check out libbpf
-$ cd examples/c
-$ xmake
-$ xmake run bootstrap
-```
-
-XMake build (Android):
-
-```shell
-$ git submodule update --init --recursive       # check out libbpf
-$ cd examples/c
-$ xmake f -p android
-$ xmake
-```
-
-Install [Xmake](https://github.com/xmake-io/xmake)
-
-```shell
-$ bash <(wget https://xmake.io/shget.text -O -)
-$ source ~/.xmake/profile
-```
-
-## Rust Examples
-
-Install `libbpf-cargo`:
-```shell
-$ cargo install libbpf-cargo
-```
-
-Build using `cargo`:
-```shell
-$ cd examples/rust
-$ cargo build --release
-$ sudo ./target/release/xdp 1
-<...>
-```
 
 # Troubleshooting
 
