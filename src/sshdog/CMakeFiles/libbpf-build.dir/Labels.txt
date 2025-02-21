@@ -1,0 +1,11 @@
+# Target labels
+ libbpf
+# Source files and their labels
+/home/etsme/workspace/github/libbpf-bootstrap/src/sshdog/CMakeFiles/libbpf-build
+/home/etsme/workspace/github/libbpf-bootstrap/src/sshdog/CMakeFiles/libbpf-build.rule
+/home/etsme/workspace/github/libbpf-bootstrap/src/sshdog/libbpf/src/libbpf-stamp/libbpf-build.rule
+/home/etsme/workspace/github/libbpf-bootstrap/src/sshdog/libbpf/src/libbpf-stamp/libbpf-configure.rule
+/home/etsme/workspace/github/libbpf-bootstrap/src/sshdog/libbpf/src/libbpf-stamp/libbpf-patch.rule
+/home/etsme/workspace/github/libbpf-bootstrap/src/sshdog/libbpf/src/libbpf-stamp/libbpf-update.rule
+/home/etsme/workspace/github/libbpf-bootstrap/src/sshdog/libbpf/src/libbpf-stamp/libbpf-download.rule
+/home/etsme/workspace/github/libbpf-bootstrap/src/sshdog/libbpf/src/libbpf-stamp/libbpf-mkdir.rule

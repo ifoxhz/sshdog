@@ -1,0 +1,20 @@
+/home/etsme/workspace/github/libbpf-bootstrap/examples/c/bpftool/bootstrap/main.o: \
+ main.c \
+ /home/etsme/workspace/github/libbpf-bootstrap/bpftool/include/uapi/linux/bpf.h \
+ /home/etsme/workspace/github/libbpf-bootstrap/bpftool/include/linux/types.h \
+ /home/etsme/workspace/github/libbpf-bootstrap/bpftool/include/uapi/linux/bpf_common.h \
+ /home/etsme/workspace/github/libbpf-bootstrap/examples/c/bpftool/bootstrap/libbpf/include/bpf/bpf.h \
+ /home/etsme/workspace/github/libbpf-bootstrap/examples/c/bpftool/bootstrap/libbpf/include/bpf/libbpf_common.h \
+ /home/etsme/workspace/github/libbpf-bootstrap/examples/c/bpftool/bootstrap/libbpf/include/bpf/libbpf_version.h \
+ /home/etsme/workspace/github/libbpf-bootstrap/examples/c/bpftool/bootstrap/libbpf/include/bpf/libbpf_legacy.h \
+ /home/etsme/workspace/github/libbpf-bootstrap/examples/c/bpftool/bootstrap/libbpf/include/bpf/btf.h \
+ /home/etsme/workspace/github/libbpf-bootstrap/bpftool/include/uapi/linux/btf.h \
+ /home/etsme/workspace/github/libbpf-bootstrap/examples/c/bpftool/bootstrap/libbpf/include/bpf/hashmap.h \
+ /home/etsme/workspace/github/libbpf-bootstrap/examples/c/bpftool/bootstrap/libbpf/include/bpf/libbpf.h \
+ main.h \
+ /home/etsme/workspace/github/libbpf-bootstrap/bpftool/include/linux/compiler.h \
+ /home/etsme/workspace/github/libbpf-bootstrap/bpftool/include/linux/compiler_types.h \
+ /home/etsme/workspace/github/libbpf-bootstrap/bpftool/include/linux/compiler-gcc.h \
+ /home/etsme/workspace/github/libbpf-bootstrap/bpftool/include/linux/kernel.h \
+ /home/etsme/workspace/github/libbpf-bootstrap/bpftool/include/linux/build_bug.h \
+ json_writer.h

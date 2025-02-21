@@ -1,0 +1,37 @@
+{
+	"sources" : 
+	[
+		{
+			"file" : "/home/etsme/workspace/github/libbpf-bootstrap/examples/c/CMakeFiles/libbpf-build"
+		},
+		{
+			"file" : "/home/etsme/workspace/github/libbpf-bootstrap/examples/c/CMakeFiles/libbpf-build.rule"
+		},
+		{
+			"file" : "/home/etsme/workspace/github/libbpf-bootstrap/examples/c/libbpf/src/libbpf-stamp/libbpf-build.rule"
+		},
+		{
+			"file" : "/home/etsme/workspace/github/libbpf-bootstrap/examples/c/libbpf/src/libbpf-stamp/libbpf-configure.rule"
+		},
+		{
+			"file" : "/home/etsme/workspace/github/libbpf-bootstrap/examples/c/libbpf/src/libbpf-stamp/libbpf-patch.rule"
+		},
+		{
+			"file" : "/home/etsme/workspace/github/libbpf-bootstrap/examples/c/libbpf/src/libbpf-stamp/libbpf-update.rule"
+		},
+		{
+			"file" : "/home/etsme/workspace/github/libbpf-bootstrap/examples/c/libbpf/src/libbpf-stamp/libbpf-download.rule"
+		},
+		{
+			"file" : "/home/etsme/workspace/github/libbpf-bootstrap/examples/c/libbpf/src/libbpf-stamp/libbpf-mkdir.rule"
+		}
+	],
+	"target" : 
+	{
+		"labels" : 
+		[
+			"libbpf"
+		],
+		"name" : "libbpf-build"
+	}
+}

@@ -1,0 +1,7 @@
+/home/etsme/workspace/github/libbpf-bootstrap/src/sshdog/CMakeFiles/libbpf.dir
+/home/etsme/workspace/github/libbpf-bootstrap/src/sshdog/CMakeFiles/libbpf-build.dir
+/home/etsme/workspace/github/libbpf-bootstrap/src/sshdog/CMakeFiles/bpftool.dir
+/home/etsme/workspace/github/libbpf-bootstrap/src/sshdog/CMakeFiles/bpftool-build.dir
+/home/etsme/workspace/github/libbpf-bootstrap/src/sshdog/CMakeFiles/sshtrace.dir
+/home/etsme/workspace/github/libbpf-bootstrap/src/sshdog/CMakeFiles/edit_cache.dir
+/home/etsme/workspace/github/libbpf-bootstrap/src/sshdog/CMakeFiles/rebuild_cache.dir

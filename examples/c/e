@@ -1,0 +1,23 @@
+SEC("struct_ops/hid_device_event")
+int BPF_PROG(filter_switch, struct hid_bpf_ctx *hid_ctx)
+{
+    __u8 *data = hid_bpf_get_data(hid_ctx, 0 /* offset */, 192 /* size */);
+    __u8 *buf;
+
+    if (!data)
+        return 0; /* EPERM check */
+
+    if (current_value != data[152]) {
+        buf = bpf_ringbuf_reserve(&ringbuf, 1, 0);
+        if (!buf)
+            return 0;
+
+        *buf = data[152];
+
+        bpf_ringbuf_commit(buf, 0);
+
+        current_value = data[152];
+    }
+
+    return 0;
+}

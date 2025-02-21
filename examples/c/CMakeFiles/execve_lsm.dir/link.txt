@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/execve_lsm.dir/execve_lsm.c.o -o execve_lsm  libbpf/libbpf.a -lelf -lz 

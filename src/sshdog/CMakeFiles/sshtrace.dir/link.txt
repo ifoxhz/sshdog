@@ -1,0 +1,1 @@
+/usr/bin/cc CMakeFiles/sshtrace.dir/sshtrace.c.o -o sshtrace  libbpf/libbpf.a -lelf -lz 
